@@ -1,0 +1,21 @@
+{
+  "name": "testsample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "4.2.0",
+    "mocha": "6.0.2"
+  },
+  "devDependencies": {
+    "eslint": "5.15.3",
+    "eslint-plugin-import": "2.16.0"
+  }
+}
