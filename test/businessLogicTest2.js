@@ -4,8 +4,8 @@ const businessLogic = require('../src/businessLogic');
 
 const expect = chai.expect;
 
-describe('Testing v2', () => {
-    it('should return A', () => {
+describe('Business work function', () => {
+    it('should return A given minimal parameters', () => {
         const input = {
             body: {
                 message: {
@@ -20,3 +20,8 @@ describe('Testing v2', () => {
         expect(businessLogic.work(input, additionalInfo)).to.be.equal(businessResults.resultA);
     });
 });
+
+/**
+ * This comment is at the bottom to suggest that you should first run the test and only then proceed to read it.
+ * This test should work for a single case.
+ */

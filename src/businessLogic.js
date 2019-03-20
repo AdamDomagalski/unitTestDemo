@@ -21,6 +21,7 @@ module.exports.work = (basicJobInformation, optionalAdditionalInformation) => {
 };
 /**
  * This space is left blank intentionally ;)
+ * Spoilers below!
  *
  *
  *
@@ -39,14 +40,14 @@ module.exports.work = (basicJobInformation, optionalAdditionalInformation) => {
 
 
 /**
- Without even running the code thanks to static eslint analysis we already have some information information
- why is this function bad:
- it has a high complexity rating, which means that it is harder to understand then the current standard
- the IDE also suggests that some else statements could be skipped to increase readability
- Those are the obvious reasons
+ Without even running the code thanks to static eslint analysis we already have some information.
+ Why is this function bad:
+ It has a high complexity rating, which means that it is harder to understand then the current standard.
+ The IDE suggests that some else statements could be skipped to increase readability.
 
- there is no assertion that rawExpectedMessage is not null/undefined
- there is no checking that the response actually has resultA body parameter
- response can be anything, from string to array to object, anything we want, there is only resultA single check that it is not null
- we are checking that response body message
+ Those are the obvious reasons, the bit more in depth:
+ There is no assertion that rawExpectedMessage is not null/undefined.
+ There is no checking that the response actually has resultA body parameter
+ Response can be anything, from string to array to object, anything we want.
+ See if you can spot any other (there are a few more).
  */

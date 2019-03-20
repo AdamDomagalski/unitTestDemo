@@ -21,10 +21,10 @@ function prepareTestData(basicInfoValue, additionalInfoValue, expectedResult) {
     };
 }
 
-describe('Testing v4', () => {
+describe('Business work function', () => {
     [
         prepareTestData('asd', 'asd', businessResults.resultA),
-        prepareTestData(null, 'asd', businessResults.resultC),
+        prepareTestData(null, 'asd', businessResults.resultC)
     ].forEach((testData) => {
         it(
             `should return ${testData.expectedResult} for ${utils.inspect(testData.input)} and ${utils.inspect(testData.extra)}`,
@@ -33,3 +33,8 @@ describe('Testing v4', () => {
             });
     });
 });
+
+/**
+ * This comment is at the bottom to suggest that you should first run the test and only then proceed to read it.
+ * Adding the utils.inspect will give us a simple form of technical documentation just from running tests for free!
+ */
